@@ -6,9 +6,39 @@
 }
 
 body {
-    background-color:yellow;
-font-size: 56px;
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
 }
-p {
-    background-color: green;
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Header*/
+.content {
+    background-color: white;
+    height: 4rem;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+header .desktop ul  {
+display: flex;
+}
+
+header .desktop li {
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.desktop a {
+    color: black;
+    opacity: 0.9;
+    font-weight: bold;
+    text-decoration: none;
 }
