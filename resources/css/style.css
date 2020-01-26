@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 /*Header*/
@@ -25,15 +26,31 @@ body {
     position: fixed;
     z-index: 5;
     width: 100%;
+  
+}
+
+.desktop {
+    margin-right: 1.5rem;
+    
 }
 
 header .desktop ul  {
-display: flex;
+    display: flex;
 }
 
 header .desktop li {
     padding: 0 1rem;
     list-style: none;
+}
+header p {
+    flex: 1;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+.logoname {
+    color: gainsboro;
+    
 }
 
 .desktop a {
@@ -41,4 +58,9 @@ header .desktop li {
     opacity: 0.9;
     font-weight: bold;
     text-decoration: none;
+}
+header img {
+    margin-left: 1.5rem;
+    height: 50px;
+    width: auto;
 }
