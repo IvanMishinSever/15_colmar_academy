@@ -64,3 +64,17 @@ header img {
     height: 50px;
     width: auto;
 }
+.mobile {
+    display: none;
+}
+/* mobile header*/
+
+@media only screen and (max-width: 361px) {
+.desktop {
+    display: none;
+}
+.mobile {
+    display: block;
+    width: 100%;
+}
+}
