@@ -9,12 +9,12 @@ body {
     background-color: gainsboro;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-
+    
 }
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -26,13 +26,13 @@ body {
     position: fixed;
     z-index: 5;
     width: 100%;
-  
+    margin: 0 auto;
+    min-width: 105px;
 }
 
 .desktop {
     margin-right: 1.5rem;
-    
-}
+    }
 
 header .desktop ul  {
     display: flex;
@@ -43,10 +43,14 @@ header .desktop li {
     list-style: none;
 }
 header p {
-    flex: 1;
+   /* flex: 1;*/
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 500;
+}
+.logo {
+    flex: 1;
+    justify-content: flex-start;
 }
 .logoname {
     color: gainsboro;
@@ -69,7 +73,7 @@ header img {
 }
 /* mobile header*/
 
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 845px) {
 .desktop {
     display: none;
 }
@@ -77,4 +81,16 @@ header img {
     display: block;
     width: 100%;
 }
+.mobile ul {
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 286px) {
+    .desktop {
+        display: none;
+    }
+    .mobile img {
+        height: 50%;
+    }
 }
