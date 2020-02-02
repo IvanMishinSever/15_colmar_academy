@@ -14,10 +14,11 @@ body {
 
 .flex-container {
     display: flex;
-   flex-wrap: wrap;
+   /*flex-wrap: wrap;*/
     justify-content: center;
     align-items: center;
 }
+
 
 /*Header*/
 .content {
@@ -97,7 +98,7 @@ header img {
 
             /*Banner Section*/
 .banner-block {
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 .button-class {
     background-color: rgb(87, 79, 79); 
@@ -114,4 +115,41 @@ header img {
 }
 .banner-block img {
     width: 60%;
+}
+
+            /*Information Section*/
+
+.information-block {
+    background-color: white;
+    flex-wrap: nowrap;
+   
+}
+.image-container {
+    width: 60%;
+}
+.image-container img {
+    width: 100%;
+}
+
+.information-items {
+display: flex;
+flex-direction: column;
+
+
+}
+.info-item {
+
+}
+.main-text-items {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.text-items {
+    font-size: 1rem;
+    font-weight: 200;   
+}
+.text-href {
+    font-size: 1rem;
+    font-weight: 200; 
+    color: rgb(0, 110, 255);  
 }
